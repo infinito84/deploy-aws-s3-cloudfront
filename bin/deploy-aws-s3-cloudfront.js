@@ -321,6 +321,7 @@ function deploy(uploads, deletes) {
               Key: argv.destination + key,
               ContentType: mimeTypes.lookup(file) || 'application/octet-stream',
               ContentLength: stats.size,
+              CacheControl: 'max-age=31536000'
             }, defaults);
 
             console.log(colors.info('Uploading ' + colors.bold(params.Key) + ' (' + prettyBytes(params.ContentLength)  + ') as ' + colors.bold(params.ContentType) + ' to ' + colors.bold(params.Bucket) + '...'));
