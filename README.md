@@ -4,7 +4,7 @@ Syncs a local directory to an AWS S3 bucket, optionally invalidating affected Cl
 
 ## Installation
 
-    npm install --save deploy-aws-s3-cloudfront
+    yarn add https://github.com/infinito84/deploy-aws-s3-cloudfront
 
 ### Authentication
 
